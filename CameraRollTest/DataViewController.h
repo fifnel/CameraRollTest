@@ -11,4 +11,13 @@
 @interface DataViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;
+
+@property (weak, nonatomic) IBOutlet UIButton *NormalCaptureButton;
+@property (weak, nonatomic) IBOutlet UIButton *EverythingCaptureButton;
+
+- (IBAction)OnNormalCapture:(id)sender;
+- (IBAction)OnEverythingCapture:(id)sender;
+
 @end
+
+CGImageRef UIGetScreenImage(void);
